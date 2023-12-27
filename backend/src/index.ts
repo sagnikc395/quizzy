@@ -1,9 +1,20 @@
 import http from "http";
 import { Server } from "socket.io";
+import { IOManager } from "./managers/IOManager";
 
 const server = http.createServer();
 const io = new Server(server);
 
-io.on("connection", () => {});
+const ioManager = new IOManager(io);
 
-server.listen(3000);
+io.on("connection", (client) => {
+  client.on("event", (data) => {
+    const type = data.type;
+
+  });
+  client.on("disconnect", () => {
+    /** */
+  });
+});
+
+io.listen(3000);
