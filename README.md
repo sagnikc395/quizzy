@@ -15,12 +15,4 @@ An Nextjs based quiz application made using Next.js
 - Prisma 
 - React 
 
-#### Bounties for Frontend:
-- Simple View with Title and answers
-  - title : string 
-  - choices : string[]
-  - image: string (if currently the question has a associated iamge) 
-- Leaderboard view 
-  - winners: {username: string,profilePicture?: string, points: number} [] => will be sorted 
-
 
