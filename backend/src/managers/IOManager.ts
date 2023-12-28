@@ -8,6 +8,7 @@ export class IOManager {
   private static instance: IOManager;
 
   public static getIo() {
+    //singleton.
     if (!this.instance) {
       const io = new Server(server);
       this.io = io;
