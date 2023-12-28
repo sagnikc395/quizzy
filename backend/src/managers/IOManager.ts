@@ -7,12 +7,11 @@ export class IOManager {
   private static io: Server;
   private static instance: IOManager;
 
-  public static getInstance() {
-    const io = new Server(server);
+  public static getIo() {
     if (!this.instance) {
-      this.instance = new IOManager();
+      const io = new Server(server);
       this.io = io;
     }
-    return this.instance.io;
+    return this.io;
   }
 }
